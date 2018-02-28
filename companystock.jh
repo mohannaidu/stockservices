@@ -1,0 +1,39 @@
+entity Sector {
+	id Integer,
+    name String
+}
+
+entity StockInfo {
+	id Integer,
+    name String,
+    code String
+}
+
+entity StockPrice {
+	id Integer,
+    publishDate Instant,
+    opening Double,
+    closing Double,
+    change Double,
+    volume Double,
+    currentPrice Float,
+    high Double,
+    low Double
+}
+
+entity UserPortfolio {
+	id Integer,
+	userid String
+}
+
+relationship OneToOne {
+  StockPrice{info} to StockInfo{price}
+}
+
+relationship OneToMany {
+  StockInfo{portfolio} to UserPortfolio{sector},
+  Sector{info} to StockInfo{sector}
+}
+
+microservice * with stockservices
+
