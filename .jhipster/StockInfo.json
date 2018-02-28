@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "portfolio",
+            "otherEntityName": "userPortfolio",
+            "otherEntityRelationshipName": "sector"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "price",
+            "otherEntityName": "stockPrice",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "info"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "sector",
+            "otherEntityName": "sector",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180228015515",
+    "entityTableName": "stock_info",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "stockservices"
+}

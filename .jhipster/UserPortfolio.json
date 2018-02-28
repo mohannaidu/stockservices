@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "sector",
+            "otherEntityName": "stockInfo",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "userid",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180228015517",
+    "entityTableName": "user_portfolio",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "stockservices"
+}
