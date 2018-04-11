@@ -1,0 +1,56 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "stockInfo",
+            "otherEntityName": "stockInfo",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "opening",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "closing",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "volume",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "high",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "low",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "publishDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "change",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "percentageChange",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20180228015516",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "stock_price",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}

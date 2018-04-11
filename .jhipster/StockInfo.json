@@ -1,0 +1,48 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "sectorInfo",
+            "otherEntityName": "sectorInfo",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "prices",
+            "otherEntityName": "stockPrice",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "stockInfo"
+        },
+        {
+            "relationshipName": "marketInfo",
+            "otherEntityName": "marketInfo",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "symbol",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180228015515",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "stock_info",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}

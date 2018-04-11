@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015515_added_entity_StockInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015516_added_entity_StockPrice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015517_added_entity_UserPortfolio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015517_added_entity_Userportfolio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180327013146_added_entity_SectorPrice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180327013938_added_entity_SectorInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180327015031_added_entity_MarketInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180401002748_added_entity_IndiceInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180401004526_added_entity_IndicePrice.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180228015515_added_entity_constraints_StockInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015516_added_entity_constraints_StockPrice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015517_added_entity_constraints_UserPortfolio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180228015517_added_entity_constraints_Userportfolio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180327013146_added_entity_constraints_SectorPrice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180327015031_added_entity_constraints_MarketInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180401004526_added_entity_constraints_IndicePrice.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

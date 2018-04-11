@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "sectorPrices",
+            "otherEntityName": "sectorPrice",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "sectorInfo"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180327013938",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "sector_info",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}

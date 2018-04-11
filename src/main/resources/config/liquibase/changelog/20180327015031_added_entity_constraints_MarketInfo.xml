@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity MarketInfo.
+    -->
+    <changeSet id="20180327015031-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="market_infos_id"
+                                 baseTableName="market_info_sector_info"
+                                 constraintName="fk_market_info_sector_info_market_infos_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="market_info"/>
+        <addForeignKeyConstraint baseColumnNames="sector_infos_id"
+                                 baseTableName="market_info_sector_info"
+                                 constraintName="fk_market_info_sector_info_sector_infos_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sector_info"/>
+        
+    </changeSet>
+</databaseChangeLog>

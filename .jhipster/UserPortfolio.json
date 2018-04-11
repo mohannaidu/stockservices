@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "stockInfo",
+            "otherEntityName": "stockInfo",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180228015517",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "user_portfolio",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}

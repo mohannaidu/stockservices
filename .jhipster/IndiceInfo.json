@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "symbol",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180401002748",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "indice_info",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}

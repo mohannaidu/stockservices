@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity IndicePrice.
+    -->
+    <changeSet id="20180401004526-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="indice_info_id"
+                                 baseTableName="indice_price"
+                                 constraintName="fk_indice_price_indice_info_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="indice_info"/>
+
+    </changeSet>
+</databaseChangeLog>

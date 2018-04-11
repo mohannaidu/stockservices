@@ -1,0 +1,56 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "indiceInfo",
+            "otherEntityName": "indiceInfo",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "open",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "high",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "low",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "change",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "publishDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "percentageChange",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "volume",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180401004526",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "indice_price",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}

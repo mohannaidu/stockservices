@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity SectorPrice.
+    -->
+    <changeSet id="20180327013146-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="sector_info_id"
+                                 baseTableName="sector_price"
+                                 constraintName="fk_sector_price_sector_info_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sector_info"/>
+
+    </changeSet>
+</databaseChangeLog>

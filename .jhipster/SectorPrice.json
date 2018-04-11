@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "sectorInfo",
+            "otherEntityName": "sectorInfo",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "opening",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "closing",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "high",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "low",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "change",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "percentageChange",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "publishDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180327013146",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "sector_price",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination",
+    "microserviceName": "stockservices",
+    "searchEngine": "elasticsearch"
+}
